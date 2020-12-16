@@ -1,0 +1,65 @@
+
+.db
+  &-box
+    max-width: 1000px
+    margin: 0 auto
+  &-header
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    height: $db-header-height
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #ffffff
+    box-shadow: 0 5px 2px 2px rgba(60,64,67, .15)
+    z-index: 1000
+  &-new
+    margin-top: $db-header-height
+    padding: 1.5rem
+    background-color: #dadce0
+    &-create
+      font-size: 1.5rem
+      color: #000000
+      width: 160px
+      height: 160px
+      background-color: #ffffff
+      border-radius: 4px
+      border: 1px solid #dadce0
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      text-decoration: none
+      cursor: pointer
+      &:hover
+        color: green
+        border-color: green
+  &-table
+    padding: 1rem
+    &-header
+      font-size: 16px
+      font-weight: 500
+      color: #202124
+      margin-bottom: 10px
+      padding: 0 12px
+      display: flex
+      justify-content: space-between
+    &-list
+      @include clear-list
+      &-item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 10px
+        padding: 12px 14px 12px 16px
+        &:hover
+          background-color: #e6f4ea
+          border-radius: 25px
+        a
+          font-size: 14px
+          color: #202124
+          text-decoration: none
+          &:hover
+            text-decoration: underline

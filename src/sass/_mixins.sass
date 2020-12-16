@@ -1,0 +1,21 @@
+@mixin btn($color: green)
+  height: 24px
+  padding: 3px
+  text-align: center
+  position: relative
+  color: rgba(#000,.7)
+  background-color: transparent
+  border: none
+  outline: none
+  cursor: pointer
+  i
+    font-size: 18px
+  &:active, &.active
+    color: $color
+  &:hover
+    background-color: #eeeeee
+
+@mixin clear-list()
+  list-style-type: none
+  margin: 0
+  padding: 0

@@ -1,0 +1,26 @@
+.excel-header
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  height: $header-height
+  padding: 0 4px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &-input
+    font-size: 18px
+    color: #000000
+    height: 20px
+    padding: 2px 7px
+    border: 2px solid transparent
+    border-radius: 2px
+    line-height: 22px
+    outline: none
+    &:hover
+      border-color: $border-color
+    &:focus
+      border-color: #1a73e8
+  &-btn
+    @include btn(red)
