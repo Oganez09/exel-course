@@ -18,6 +18,11 @@
       border: 1px solid $border-color
       border-top: none
       background-color: #f8f9fa
+      position: relative
+      &_resize
+        left: 0
+        height: 4px
+        cursor: row-resize
     &-data
       display: flex
   &-column
@@ -31,6 +36,21 @@
     border: 1px solid $border-color
     border-top: none
     border-left: none
+    position: relative
+    &_resize
+      top: 0
+      width: 4px
+      cursor: col-resize
+  &-row-info, &-column
+    &_resize
+      position: absolute
+      bottom: 0
+      right: 0
+      background-color: $main-color
+      opacity: 0
+      z-index: 100
+      &:hover
+        opacity: 1
   &-cell
     color: #111111
     min-width: 40px
@@ -44,5 +64,5 @@
     outline: none
     &__selected
       border: none
-      outline: 2px solid #3c74ff
+      outline: 2px solid $main-color
       z-index: 2
